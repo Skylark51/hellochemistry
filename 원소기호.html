@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<title>EZ 과학연습</title>
+<meta charset="utf-8">
+</head>
+<body bgcolor="black" text="white" link="#ff0055" vlink="#5500ff" alink="#ff00ff">
+ 
+<h1>원소기호 문제</h1>
+ <p> 1. 다음 중 1주기 원소는?</p>
+ <form name="form">
+  <input type="radio" name="kingName" value="v1">H<br>
+  <input type="radio" name="kingName" value="v2">Li<br>
+  <input type="radio" name="kingName" value="v3">Na<br>
+  <input type="radio" name="kingName" value="v4">K<br>
+  <input type="button" name="선택" value="정답확인" onclick="myFucntion()">
+ </form>
+ <p id="check"></p>
+ <script type="text/javascript">
+  function myFucntion() {
+   if(form.kingName[0].checked==true) document.getElementById("check").innerHTML="정답입니다.";
+   else document.getElementById("check").innerHTML="오답입니다.";
+  }
+ </script>
+
+
+</body>
+</html>
